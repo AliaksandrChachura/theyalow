@@ -489,7 +489,7 @@ height: 1215px;
 
 .circle div {
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 0px;
     color: #ffffff;
     font-family: "PT Sans Narrow";
@@ -512,13 +512,13 @@ height: 1215px;
 }
 
 .text-list {
-    position: relative;
+    position: absolute;
     margin: -123px 768px;
     width: 352px;
     height: 45px;
 }
 
-.text-list ul  {
+.text-list ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -527,13 +527,12 @@ height: 1215px;
     color: #a9a9a7;
     font-family: "Open Sans";
     font-weight: 400;
-    display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-.text-list ul li:before {
+.text-list ul li:left {
     width: 14px;
     height: 14px;
     border-radius: 7px;
@@ -584,4 +583,301 @@ height: 1215px;
     font-style: italic;
     text-align: center;
     margin: -44px 0px 0 4px;
+}
+
+@media (max-width: 640px) {
+
+    body {
+        margin: 0px auto;
+        position: absolute;
+        overflow: auto;
+        margin-right: 0px;
+        width: 640px;
+    }
+
+    .wrapper{
+        margin: auto;
+        height: 390px;
+        overflow: hidden;   
+        
+    }
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 64px;
+    
+}
+
+.logo {
+    display: flex;
+    width: 160px;
+    flex-direction: row;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+    box-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    margin: 60px  0 0 140px;
+}
+
+.wrap-logo{
+    position:relative;
+  }
+   
+  .back {
+    position: absolute;
+    width: 40px;
+    height: 39px;
+    top: -48px;
+    right: 125px;
+  }
+   
+  .front {
+    width: 40px;
+    height: 39px;
+    position: relative;
+    top: -31px;
+    right: 125px;
+    margin: -85px 0 -4px -2px;
+  }
+
+.logo h1 {
+    position: relative;
+    margin: -39px 18px 0 -120px;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-family: "Lucida Sans";
+    font-style: italic;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    margin: 1px 141px 0 6px;
+    width: 450px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: "Segoe WP";
+    text-align: center;
+    width: 150px;
+    height: 64px;
+    background-image: linear-gradient(#f5c505 0%, #f5c505 100%);
+}
+
+.navbar ul li:not(:nth-child(1)) {
+border-left: 1px solid #9b7d08;
+}
+
+.navbar ul li a:hover {
+    background-image: linear-gradient(0deg, #979690 0%, #979690 100%);
+}
+.navbar ul li:first-child a:before {
+    content: url(assets/images/about1.png);
+    padding-right: 1px;
+}
+
+.navbar ul li:nth-child(2) a:before {
+    content: url(assets/images/services.png);
+}
+
+.navbar ul li:nth-child(3) a:before {
+    content: url(assets/images/contact.png);
+}
+
+.video-in-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 330px;
+    
+}
+
+.left-button {
+    visibility: hidden;
+}
+
+.left-button section {
+    visibility: hidden;
+}
+
+.right-button {
+    visibility: hidden;
+    
+}
+
+.right-button section {
+    visibility: hidden;
+}
+
+
+.carrots-text div video {
+    position: relative;
+    margin: 0px 180px;
+    height: 325px;
+    width: 640px;
+    object-fit: fill;
+}
+
+.carrots-description {
+    visibility: hidden;
+}
+
+.video-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 486px;
+}
+
+.lorem {
+    visibility: hidden;
+}
+
+.video2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video2 div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 300px;
+    height: 230px;
+}
+
+
+
+
+.twitter {
+    height: 230px;
+    width: 330px;
+}
+
+.about-lorem-ipsum {
+    background-image: url("assets/images/back-lorem.png");
+    width: 279px;
+    height: 307px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    line-height: 33px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+}
+
+.about-lorem-ipsum div {
+   visibility: hidden;
+}
+
+
+.monkey-video {
+    height: 230px;
+    width: 315px;
+}
+
+.monkey-video div video {
+    height: 100%;
+    width: 313px;
+    object-fit: fill; 
+}
+
+.twitter {
+    display: flex;
+    flex-direction: row;
+    background-image: url("assets/images/backtwitter.png");
+}
+
+.twitter p {
+    position: relative;
+    margin: 10px 0px 0px 284px;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 300;
+}
+
+.twitter img {
+    position: relative;
+    margin: 20px 0px 0px -227px;
+}
+
+.twitter div {
+    position: relative;
+    margin: 188px 0px 0px 288px;
+}
+
+.twitter div:hover {
+    height: 15px;
+    width: 15px;
+    background-color: #979690;
+}
+
+.date {    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 90px;
+    width: 1020px;
+}
+
+.date div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 111px;
+    background-image: url("assets/images/date.png");
+}
+
+.date div p:first-child {
+    position: relative;
+    margin: 16px 0px 0px 3px;
+    font-size: 51px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+
+.date div p:last-child {
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #b26529;
+    font-family: "Segoe UI";
+}
+
+.video-2 input[type=range] {
+    visibility: hidden;
+  }
+
 }
