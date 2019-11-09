@@ -1,2 +1,2 @@
 # theyalow
-https://theyalow.github.io/AliaksandrChachura
+https://AliaksandrChachura.github.io/theyalow
